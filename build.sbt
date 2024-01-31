@@ -9,7 +9,7 @@ lazy val root = (project in file("."))
 
 val sparkVersion = "3.2.1"
 val mongoVersion = "10.2.0"
-val jacksonVersion = "2.15.1"
+val jacksonVersion = "2.12.0"
 
 
 libraryDependencies ++= Seq(

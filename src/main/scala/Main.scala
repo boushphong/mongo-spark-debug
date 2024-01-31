@@ -9,7 +9,7 @@ object Main {
       .getOrCreate()
 
     val df = spark.read.format("mongodb")
-      .option("connection.uri", "mongodb://phong:phongbui@127.0.0.1:27017/?authSource=admin")
+      .option("connection.uri", "mongodb://admin:admin123@127.0.0.1:27017/?authSource=admin")
       .option("database", "local")
       .option("collection", "startup_log")
       .option("aggregation.pipeline", """{"$project": {"json": "$$ROOT"}}""")
